@@ -4,7 +4,7 @@ import { TiThMenuOutline } from "react-icons/ti";
 import { SideBar } from "../components";
 import { useContext, useState } from "react";
 import { Context } from "../context/Context";
-
+import Logo from "../assets/imgs/logo.jpg"
 export const Header = () => {
     const { sideBar, setSideBar } = useContext(Context)
     return (
@@ -17,7 +17,8 @@ export const Header = () => {
                             to="aboute-us"
                             duration={800}
                             smooth={true}>
-                            <h1 className="site-logo"><span className="color-i">I</span>VAF hub</h1>
+                                <img src={Logo} alt="logo" className="site-logo"/>
+                            {/* <h1 className="site-logo"><span className="color-i">I</span>VAF hub</h1> */}
                         </Link>
                         <ul className="header-ul">
                             <li className="header-list">

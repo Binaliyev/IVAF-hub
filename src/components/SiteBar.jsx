@@ -3,6 +3,7 @@ import { FiX } from "react-icons/fi";
 import { Link } from "react-scroll";
 import { Context } from "../context/Context";
 import { useContext } from "react";
+import Logo from "../assets/imgs/logo.jpg"
 export const SideBar = () => {
     const { setSideBar } = useContext(Context)
     return (
@@ -17,7 +18,8 @@ export const SideBar = () => {
                             duration={800}
                             smooth={true}
                             onClick={() => setSideBar(false)}>
-                            <h1 className="site-logo side-bar-log "><span className="color-i">I</span>VAF hub</h1>
+                            <img src={Logo} alt="logo" className="site-logo" />
+                            {/* <h1 className="site-logo side-bar-log "><span className="color-i">I</span>VAF hub</h1> */}
                         </Link>
                         <Link className="side-bar-link"
                             offset={-10}
