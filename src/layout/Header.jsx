@@ -4,7 +4,7 @@ import { TiThMenuOutline } from "react-icons/ti";
 import { SideBar } from "../components";
 import { useContext, useState } from "react";
 import { Context } from "../context/Context";
-import Logo from "../assets/imgs/logo.jpg"
+import Logo from "../assets/imgs/logo.svg"
 export const Header = () => {
     const { sideBar, setSideBar } = useContext(Context)
     return (

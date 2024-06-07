@@ -3,7 +3,7 @@ import { FiX } from "react-icons/fi";
 import { Link } from "react-scroll";
 import { Context } from "../context/Context";
 import { useContext } from "react";
-import Logo from "../assets/imgs/logo.jpg"
+import Logo from "../assets/imgs/logo.svg"
 export const SideBar = () => {
     const { setSideBar } = useContext(Context)
     return (
