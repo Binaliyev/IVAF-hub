@@ -102,19 +102,19 @@ export const Main = () => {
                                 <h1 className="connection-text">Bog'lanish</h1>
                                 <form className="connection-form" onSubmit={handleSubmit} >
                                     <div className="validation-box">
-                                        <input type="text" className="connection-inputs" placeholder="Ismingizni kirgizin" {...formik.getFieldProps("firstname")} ref={firsRef} />
+                                        <input type="text" className="connection-inputs" placeholder="Ismingizni kirgizing" {...formik.getFieldProps("firstname")} ref={firsRef} />
                                         {formik.touched.firstname && formik.errors.firstname && (
                                             <span className="error-text"> {formik.errors.firstname}</span>
                                         )}
                                     </div>
                                     <div className="validation-box">
-                                        <input type="text" className="connection-inputs" placeholder="Familiyangizni kirgizin" {...formik.getFieldProps("lastname")} ref={lastRef} />
+                                        <input type="text" className="connection-inputs" placeholder="Familiyangizni kirgizing" {...formik.getFieldProps("lastname")} ref={lastRef} />
                                         {formik.touched.lastname && formik.errors.lastname && (
                                             <span className="error-text"> {formik.errors.lastname}</span>
                                         )}
                                     </div>
                                     <div className="validation-box">
-                                        <input type="tel" className="connection-inputs" placeholder="Telifon raqamingizni kirgizin" {...formik.getFieldProps("tel")} ref={telRef} />
+                                        <input type="tel" className="connection-inputs" placeholder="Telifon raqamingizni kirgizing" {...formik.getFieldProps("tel")} ref={telRef} />
                                         {formik.touched.tel && formik.errors.tel && (
                                             <span className="error-text"> {formik.errors.tel}</span>
                                         )}
